@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 import os
 # Vext API configuration
-VEXT_API_URL = "https://payload.vextapp.com/hook/239WJBPHQJ/catch/hello" 
+VEXT_API_URL = os.environ.get('FINANCE_TEACHER_VEXT_API_URL') 
 API_KEY = os.environ.get('FINANCE_TEACHER_VEXT_API_KEY') 
 
 if API_KEY is None:
